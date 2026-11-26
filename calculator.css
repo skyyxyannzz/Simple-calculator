@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  background: rgba(223, 214, 214, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 28px;
+  width: 340px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+/* Display */
+.display {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.display .expression {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+  min-height: 20px;
+  word-break: break-all;
+  margin-bottom: 6px;
+}
+
+.display .result {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #fff;
+  word-break: break-all;
+  line-height: 1.1;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 18px 10px;
+  transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.1s ease;
+  outline: none;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.93);
+  filter: brightness(1.2);
+}
+
+/* Number buttons — cool blue-purple */
+.btn-num {
+  background: linear-gradient(145deg, #4a4e8c, #3b3f7a);
+}
+
+/* Operator buttons — vibrant orange-yellow */
+.btn-op {
+  background: linear-gradient(145deg, #f7971e, #ffd200);
+  color: #1a1a2e;
+}
+
+/* Equals — green */
+.btn-eq {
+  background: linear-gradient(145deg, #11998e, #38ef7d);
+  color: #1a1a2e;
+  grid-column: span 2;
+}
+
+/* Clear (AC) — red-pink */
+.btn-clear {
+  background: linear-gradient(145deg, #f953c6, #b91d73);
+}
+
+/* Backspace — coral */
+.btn-back {
+  background: linear-gradient(145deg, #ff6b6b, #ee0979);
+}
+
+/* Percent — teal-blue */
+.btn-percent {
+  background: linear-gradient(145deg, #00c6ff, #0072ff);
+}
+
+/* Decimal — muted purple */
+.btn-dot {
+  background: linear-gradient(145deg, #7f7fd5, #86a8e7);
+}
+
+button:hover {
+  filter: brightness(1.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
