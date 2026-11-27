@@ -2,12 +2,6 @@
 
 A simple web-based calculator built using **HTML, CSS, and JavaScript**. This project provides a basic calculator interface that allows users to perform common mathematical operations directly in their web browser.
 
-## 🌐 Live Demo
-
-Try the calculator here:
-
-[Simple Calculator](https://skyyxyannzz.github.io/Simple-calculator/)
-
 ## ✨ Features
 
 - Basic arithmetic operations:
